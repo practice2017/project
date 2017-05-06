@@ -1,0 +1,20 @@
+{# src/Blogger/BlogBundle/Resources/views/Page/index.html.twig #}
+{% extends 'BloggerBundle::layout.html.twig' %}
+
+{% block body %}
+    <div class="review" id="review">
+        <div class="cont">
+            <div id="slideshow">
+                <div class="sl1">
+                   <img src="{{ asset('images/pic1.jpg') }}" width="1000px" heigh="400px">
+                </div>
+                <div class="sl2">
+                    <img src="{{ asset('images/pic2.jpg') }}" width="700px" heigh="300px">
+                </div>
+                <div class="sl3">
+                   <img src="{{ asset('images/pic3.jpg') }}" width="700px" heigh="300px">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
