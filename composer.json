@@ -19,8 +19,8 @@
         "sensio/framework-extra-bundle": "^3.0.2",
         "sensio/generator-bundle": "~2.3",
         "incenteev/composer-parameter-handler": "~2.0",
-        "doctrine/mongodb-odm": "^1.1.2",
-        "doctrine/mongodb-odm-bundle": "^3.0"
+        "doctrine/doctrine-fixtures-bundle": "dev-master",
+        "doctrine/data-fixtures" : "dev-master"
     },
     "scripts": {
         "post-install-cmd": [

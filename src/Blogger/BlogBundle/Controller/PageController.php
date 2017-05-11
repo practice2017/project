@@ -19,7 +19,20 @@ class PageController extends Controller
 
     public function themesAction()
     {
-        return $this->render('BloggerBundle:Page:themes.html.twig');
+
+        $em = $this->getDoctrine()
+            ->getManager();
+
+        $blogs = $em->createQueryBuilder()
+            ->select('b')
+            ->from('BloggerBundle:Blog',  'b')
+            ->addOrderBy('b.created', 'DESC')
+            ->getQuery()
+            ->getResult();
+
+        return $this->render('BloggerBundle:Page:themes.html.twig', array(
+            'blogs' => $blogs
+        ));
     }
 
 }

@@ -1,3 +1,10 @@
 blogger_homepage:
     path:     /hello/{name}
     defaults: { _controller: BloggerBundle:Default:index }
+
+BloggerBundle_blog_show:
+    path:  /{id}
+    defaults: { _controller: "BloggerBundle:Blog:show" }
+    requirements:
+        methods:  GET
+        id: \d+
