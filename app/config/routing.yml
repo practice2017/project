@@ -22,3 +22,9 @@ BloggerBundle_blog_show:
     requirements:
         methods:  GET
         id: \d+
+
+BloggerBundle_create:
+     path:   /create
+     defaults: { _controller: "BloggerBundle:Page:create" }
+     requirements:
+        methods:  POST

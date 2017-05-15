@@ -13,6 +13,10 @@
         <link href="{{ asset('css/blog.css') }}" type="text/css" rel="stylesheet" />
         <link href="{{ asset('css/screen.css') }}" type="text/css" rel="stylesheet" />
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jstree/3.3.3/themes/default/style.min.css" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jstree/3.3.3/jstree.min.js"></script>
         <script src="{{ asset('js/jquery.slides.js') }}"></script>
         <script src="{{ asset('js/jquery.slides.min.js') }}"></script>
     {% endblock %}
@@ -27,7 +31,7 @@
                 <nav>
                     <ul class="navigation">
                         <li><a href="{{ path('BloggerBundle_homepage') }}">Домой</a></li>
-                        <li><a href="#">Создание занятий</a></li>
+                        <li><a href="{{ path('BloggerBundle_create') }}">Создание занятий</a></li>
                         <li><a href ="{{ path('BloggerBundle_themes') }}">Просмотр учебных вопросов</a></li>
                         <li><a href="#">Журнал преподавателя</a></li>
                         <li><a href="#">Рейтинг учащихся</a></li>

@@ -4,7 +4,7 @@ blogger_homepage:
 
 BloggerBundle_blog_show:
     path:  /{id}
-    defaults: { _controller: "BloggerBundle:Blog:show" }
+    defaults: { _controller: "BloggerBundle:BlogType:show" }
     requirements:
         methods:  GET
         id: \d+
